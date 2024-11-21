@@ -28,7 +28,7 @@ export const LoginController = async (req: Request, res: Response) => {
     res.status(200).json({ data: { user, token: accessToken } })
 }
 
-
+//User Authentication
 export const RefreshTokenController = async (req: Request, res: Response) => {
     const refresh_token = req.cookies?.refresh_token ? req.cookies.refresh_token : ''
     const tokens = await refreshToken(refresh_token)
