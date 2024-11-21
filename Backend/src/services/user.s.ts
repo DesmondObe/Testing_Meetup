@@ -12,6 +12,8 @@ export const updateProfile = async (userId: string, payload: Partial<IUser>) => 
     return user;
 }
 
+///user
+
 export const uploadProfileImage = async (userId: string, file: IFileBuffer) => {
     const user = await User.findById(userId).select('-password')
     if (!user) throw new CustomError({ message: "User not found", code: 404 });
