@@ -3,7 +3,7 @@ import { LoginController, RefreshTokenController, RegisterController } from "../
 import { validationMiddleware } from "../middleware/validation.m";
 import { LoginValidation, RegisterValidation } from "../validations/authSchema.v";
 
-
+//router codes
 const router = Router();
 
 router.post('/register', validationMiddleware(RegisterValidation), RegisterController)
