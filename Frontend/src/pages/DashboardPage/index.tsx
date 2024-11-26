@@ -39,12 +39,12 @@ const Dashboard = () => {
                 group event.
               </span>
             </div>
-            <button className={styles["btn"]}>Duo Meetup</button>
+            <button className={styles["btn"]}> Meetup Duo</button>
             <button
               className={styles["btn"]}
               onClick={() => navigate("events")}
             >
-              Multi Meetup
+              Meetup Multi
             </button>
           </div>
         </>
