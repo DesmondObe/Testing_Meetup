@@ -5,6 +5,7 @@ import { useQuery } from "@tanstack/react-query";
 import { getUser } from "../../api/user";
 import { useEffect } from "react";
 
+ // Initialize navigate hook for programmatic navigation
 const Dashboard = () => {
   const navigate = useNavigate();
 
